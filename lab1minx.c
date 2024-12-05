@@ -1,16 +1,16 @@
-#include<stdio.h>
-int main() {
-	int num1;
-	int num2;
-	printf("n1,n2");
-	scanf("%d%d",&num1,&num2);
-	if (num1>num2){
-		printf("num1 is greater than num2");
-		printf("\n%d",(num1-num2));
+#include <stdio.h>
+int main(){
+	int a,b;
+	printf("Enter First Number: ");
+	scanf("%d",&a);
+	printf("Enter Another: ");
+	scanf("%d",&b);
+	if (a > b){
+		printf("%d more than %d  |diff: %d",a,b,(a-b));
 	}
-	else {
-		printf("num2 is greater than num1");
-		printf("\n%d",(num2-num1));
+	else{
+		printf("%d more than %d  |diff: %d",b,a,(b-a));
 	}
+	return 0;
 }
 
